@@ -1,21 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Special+Elite&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
     <title>ODIN</title>
 </head>
+
 <body>
     <div id="grid-container">
         <div class="left">
             <div class="logo-container">
-                    <img class="logo-image" src="./Images/odin-lined.png">
-                    <p class="logo-name">ODIN</p>
-        
+                <img class="logo-image" src="./Images/odin-lined.png">
+                <p class="logo-name">ODIN</p>
+
             </div>
         </div>
-        <div class="main"></div>
+        <div class="main">
+            <div class="description">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam explicabo earum ex sint
+                    architecto, nobis consequuntur necessitatibus dicta assumenda delectus cum ducimus laborum non iusto
+                    itaque iure exercitationem debitis perferendis.</p>
+                <p>You <i>know</i> you want to.</p>
+            </div>
+            <div class="signup">
+                <form action="" method="POST">
+                    <fieldset>
+                        <legend>Let's do this!</legend>
+                        <table>
+                            <tr>
+                                <td><label for="fname">First Name</label><br/>
+                                    <input type="text" id="fname">
+                                </td>
+                                <td><label for="lname">Last Name</label><br/>
+                                    <input type="text" id="lname">
+                                </td>
+                                <td>
+                                    <label for="email">Email Name</label><br/>
+                                    <input type="email" id="email">
+                                </td>
+                            </tr>
+                            <br />
+                            <tr>
+                                <td><label for="phone">Phone Number</label><br/>
+                                    <input type="phone" id="phone">
+                                </td>
+                                <td><label for="password">Password</label><br/>
+                                    <input type="password" id="password"><br/>
+                                    
+                                </td>
+                                <td>
+                                    <label for="confirm">Confirm Password</label><br/>
+                                    <input type="password" id="confirm" class="warning"><br/>
+                                    <label for="confirm" class="pass-warning">Passwords don't match!</label>
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                    <input id="submit" type="submit" value="Create Account"> <br/>
+                    <p class="login">Already have an account? <a href="google.ca" style="color:green; text-decoration: none;">Log In.</a></a></p>
+                </form>
+            </div>
+        </div>
     </div>
 </body>
+
 </html>
